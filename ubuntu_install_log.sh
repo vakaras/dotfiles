@@ -17,3 +17,6 @@ sudo apt-get install build-essential bzr mercurial libjpeg62-dev ruby-dev gettex
 
 # Install VirtualBox.
 sudo apt-get install virtualbox-4.3
+
+# Install Xmonad
+sudo apt-get install xmonad libghc-xmonad-contrib-dev libghc-xmonad-dev
