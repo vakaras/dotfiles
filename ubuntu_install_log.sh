@@ -3,7 +3,7 @@ sudo apt-get install zsh zsh-doc
 chsh -s $(which zsh)
 
 # Install tmux.
-sudo apt-get install tmux
+sudo apt-get install tmux xclip
 
 # Install VIM.
 sudo apt-get install vim 
