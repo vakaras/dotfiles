@@ -7,6 +7,7 @@ sudo apt-get install tmux
 
 # Install VIM.
 sudo apt-get install vim 
+sudo apt-get install exuberant-ctags
 
 # Install Git.
 sudo apt-get install git

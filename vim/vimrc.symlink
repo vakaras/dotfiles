@@ -1,3 +1,18 @@
+" Install Pathogen.
+" https://github.com/tpope/vim-pathogen
+source ~/.dotfiles/vim/bundle/pathogen/autoload/pathogen.vim
+execute pathogen#infect('~/.dotfiles/vim/bundle/{}')
+
+" Installed plugins:
+" https://github.com/tpope/vim-fugitive Git wrapper.
+" http://github.com/docunext/closetag.vim Close HTML tags.
+" http://github.com/kevinw/pyflakes-vim Liniting for python files.
+" https://github.com/scrooloose/nerdcommenter Fast comment manipulations.
+" https://github.com/ervandew/supertab Word completion on steroids.
+" https://github.com/majutsushi/tagbar Awesome source code [tag]browsing.
+let g:tagbar_usearrows = 1
+nnoremap <leader>l :TagbarToggle<CR>
+
 syntax on
 
 " Wrap gitcommit file types at the appropriate length
