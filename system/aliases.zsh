@@ -7,4 +7,13 @@ then
   alias l="gls -lAh --color"
   alias ll="gls -l --color"
   alias la='gls -A --color'
+else
+  # If Linux.
+  alias ls='ls --color=auto'
+  alias ll='ls -lh'
 fi
+
+alias rm='rm -i'
+alias grep='grep --color=auto -nr'
+alias fgrep='fgrep --color=auto -nr'
+alias egrep='egrep --color=auto -nr'
