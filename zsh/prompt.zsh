@@ -67,6 +67,14 @@ rb_prompt() {
   fi
 }
 
+last_command_code() {
+  local ret="$?"
+  if [ ! $ret -eq 0 ]
+  then
+    echo "%{$fg_bold[red]%}(exit code: $ret)%{$reset_color%}"
+  fi
+}
+
 user_info() {
   echo "%{$fg[green]%}%n@%M%{$reset_color%}"
 }
@@ -75,7 +83,7 @@ current_directory() {
   echo "%{$fg_bold[blue]%}%~%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(user_info):$(current_directory) $(git_dirty)$(need_push)\n$ '
+export PROMPT=$'\n$(last_command_code)$(user_info):$(current_directory) $(git_dirty)$(need_push)\n$ '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
