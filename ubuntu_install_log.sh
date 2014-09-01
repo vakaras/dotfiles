@@ -15,6 +15,9 @@ sudo apt-get install git
 # Install development prerequisites.
 sudo apt-get install build-essential bzr mercurial libjpeg62-dev ruby-dev gettext subversion libfreetype6-dev python2.7-dev libxslt1-dev libicu-dev ruby python-dev
 
+# Install monitoring programs.
+sudo apt-get install htop
+
 # Install VirtualBox.
 sudo apt-get install virtualbox-4.3
 
