@@ -6,7 +6,7 @@ chsh -s $(which zsh)
 sudo apt-get install tmux xclip
 
 # Install VIM.
-sudo apt-get install vim 
+sudo apt-get install vim-gtk
 sudo apt-get install exuberant-ctags
 
 # Install Git.
