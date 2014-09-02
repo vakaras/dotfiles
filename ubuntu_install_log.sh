@@ -22,7 +22,7 @@ sudo apt-get install htop
 sudo apt-get install virtualbox-4.3
 
 # Install Xmonad
-sudo apt-get install xmonad libghc-xmonad-contrib-dev libghc-xmonad-dev
+sudo apt-get install xmonad libghc-xmonad-contrib-dev libghc-xmonad-dev feh
 
 # Install multimedia programs.
 sudo apt-get install mplayer gimp
