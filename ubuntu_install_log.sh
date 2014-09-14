@@ -22,7 +22,9 @@ sudo apt-get install htop
 sudo apt-get install virtualbox-4.3
 
 # Install Xmonad
-sudo apt-get install xmonad libghc-xmonad-contrib-dev libghc-xmonad-dev feh
+sudo apt-get install xmonad libghc-xmonad-contrib-dev libghc-xmonad-dev
+sudo apt-get install feh      # Wallpaper setter.
+sudo apt-get install trayer   # System tray.
 
 # Install multimedia programs.
-sudo apt-get install mplayer gimp
+sudo apt-get install mplayer gimp imagemagick
