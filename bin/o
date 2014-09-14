@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# An alias for xdg-open, which additionally:
+# +   Redirects all output to /dev/null
+# +   Opens nautilus in current folder if executed without arguments.
+# Usage:
+# o [file1, file2, ...]
+
+function start-nautilus() {
+  nautilus "$1" &
+}
+
+function start-program() {
+  xdg-open "$1" &
+}
+
+current_dir=`pwd`
+echo "Current directory: $current_dir"
+
+if [ "$#" == "0" ]
+then
+  echo "Open nautilus: $current_dir"
+  start-nautilus "$current_dir" &> /dev/null
+else
+  echo "Opening files."
+  for file in "$@"
+  do
+    echo "File: $file"
+    start-program $file &> /dev/null
+  done
+fi
