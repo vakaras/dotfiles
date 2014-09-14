@@ -1,0 +1,19 @@
+#!/bin/bash
+
+function start-trayer() {
+  trayer --edge right &
+}
+
+function start-nm-applet() {
+  nm-applet &
+}
+
+start-trayer &> /dev/null
+start-nm-applet &> /dev/null
+
+echo "Press Enter to close."
+
+read
+
+killall nm-applet
+killall trayer
