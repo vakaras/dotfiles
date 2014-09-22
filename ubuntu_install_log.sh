@@ -2,6 +2,9 @@
 sudo apt-get install zsh zsh-doc
 chsh -s $(which zsh)
 
+# TODO: Try out fish
+# sudo apt-get install fish
+
 # Install tmux.
 sudo apt-get install tmux xclip
 
@@ -13,7 +16,15 @@ sudo apt-get install exuberant-ctags
 sudo apt-get install git
 
 # Install development prerequisites.
-sudo apt-get install build-essential bzr mercurial libjpeg62-dev ruby-dev gettext subversion libfreetype6-dev python2.7-dev libxslt1-dev libicu-dev ruby python-dev
+sudo apt-get install\
+  build-essential bzr mercurial libjpeg62-dev ruby-dev\
+  gettext subversion libfreetype6-dev python2.7-dev\
+  libxslt1-dev libicu-dev ruby python-dev
+
+# For studies.
+sudo apt-get install libopenmpi-dev openmpi-doc openmpi-bin
+sudo apt-get install vagrant
+sudo apt-get install openjdk-7-jdk
 
 # Install monitoring programs.
 sudo apt-get install htop
@@ -28,3 +39,4 @@ sudo apt-get install trayer   # System tray.
 
 # Install multimedia programs.
 sudo apt-get install mplayer gimp imagemagick
+sudo apt-get install lynx
