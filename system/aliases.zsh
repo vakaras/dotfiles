@@ -14,6 +14,9 @@ else
 fi
 
 alias rm='rm -i'
-alias grep='grep --color=auto -nr'
-alias fgrep='fgrep --color=auto -nr'
-alias egrep='egrep --color=auto -nr'
+alias grep='grep --color=auto -n'
+alias fgrep='fgrep --color=auto -n'
+alias egrep='egrep --color=auto -n'
+#alias grep='grep --color=auto -nr'
+#alias fgrep='fgrep --color=auto -nr'
+#alias egrep='egrep --color=auto -nr'
