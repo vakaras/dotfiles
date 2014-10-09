@@ -25,6 +25,10 @@ sudo apt-get install\
 sudo apt-get install libopenmpi-dev openmpi-doc openmpi-bin
 sudo apt-get install vagrant
 sudo apt-get install openjdk-7-jdk
+sudo apt-get install ant
+sudo apt-get install clang-3.5 clang-3.5-doc
+sudo apt-get install libgirara-gtk3-1
+sudo apt-get install zathura
 
 # Install monitoring programs.
 sudo apt-get install htop
@@ -40,3 +44,7 @@ sudo apt-get install trayer   # System tray.
 # Install multimedia programs.
 sudo apt-get install mplayer gimp imagemagick
 sudo apt-get install lynx
+
+
+# Install health helpers.
+sudo apt-get install workrave
