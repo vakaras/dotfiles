@@ -26,6 +26,6 @@ else
   for file in "$@"
   do
     echo "File: $file"
-    start-program $file &> /dev/null
+    start-program "$file" &> /dev/null
   done
 fi
