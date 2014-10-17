@@ -107,3 +107,7 @@ call Include(g:VIM_CONFIG_DIR, 'taglist')
 " Tagbar
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
+
+
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11'
