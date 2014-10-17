@@ -27,6 +27,7 @@ sudo apt-get install vagrant
 sudo apt-get install openjdk-7-jdk
 sudo apt-get install ant
 sudo apt-get install clang-3.5 clang-3.5-doc
+sudo apt-get install libboost-all-dev
 sudo apt-get install libgirara-gtk3-1
 sudo apt-get install zathura
 
