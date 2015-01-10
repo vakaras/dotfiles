@@ -108,6 +108,10 @@ call Include(g:VIM_CONFIG_DIR, 'taglist')
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
 
+" New plugins.
 
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
+
+let g:pandoc#syntax#codeblocks#embeds#langs = ["ruby", "python", "sql", "bash=sh", "tex", "cpp"]
+let g:pandoc#syntax#conceal#blacklist = ['codeblock_delim']
