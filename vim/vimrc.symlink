@@ -108,10 +108,21 @@ call Include(g:VIM_CONFIG_DIR, 'taglist')
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
 
-" New plugins.
+" TODO: Clean up. (New plugins.)
 
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
+
+" Language check.
+
+let g:syntastic_filetype_map = {
+\ 'pandoc': 'text',
+\ 'mail': 'text',
+\ 'gitcommit': 'text'
+\ }
+let g:syntastic_text_checkers=['language_check']
+
+" Markdown files syntax highlighting.
 
 let g:pandoc#syntax#codeblocks#embeds#langs = ["ruby", "python", "sql", "bash=sh", "tex", "cpp"]
 let g:pandoc#syntax#conceal#blacklist = ['codeblock_delim']
