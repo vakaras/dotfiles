@@ -3,7 +3,7 @@
 input_file="$1"
 lang=EN-US
 
-if grep -i --quiet ' \(pagarbiai\|ir\|, kad\|, nes\|bei\|arba\|, bet|tačiau\) ' "$input_file"; then
+if grep -i --quiet '\(pagarbiai\| ir\|, kad\|, nes\| bei\| arba\|, bet|tačiau\) ' "$input_file"; then
 	lang=LT
 fi
 
