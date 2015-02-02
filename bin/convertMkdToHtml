@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Script used for converting MKD documents to HTML readable by SuperMemo.
+# Note that gladtex must use /usr/bin/gs -sDEVICE=pnggray instead of
+# gs -sDEVICE=pngmono.
+
+if [ $# -eq 0 ]
+then
+  echo "Usage: $0 <file.mkd>"
+  exit 1
+fi
+
+INPUT=$1
+OUTPUT_BASE=${1:0:-4}
+IMAGE_DIR_BASE=/data/software/WindowsShare/Studies
+IMAGE_DIR=$PWD/$OUTPUT_BASE
+IMAGE_URL_BASE=E:/Studies
+IMAGE_URL=${IMAGE_URL_BASE}${IMAGE_DIR#$IMAGE_DIR_BASE}
+
+TMP_HTEX=${OUTPUT_BASE}.htex
+
+echo "Input: $INPUT"
+echo "Output base: $OUTPUT_BASE"
+echo "Image directory: $IMAGE_DIR"
+echo "Htex: $TMP_HTEX"
+echo "Image url: $IMAGE_URL"
+
+pandoc -s "$INPUT" --gladtex -o "$TMP_HTEX"
+gladtex -v -d "$IMAGE_DIR" "$TMP_HTEX"
+gladtex -v -d "$IMAGE_DIR" -u "$IMAGE_URL" "$TMP_HTEX"
+rm -f "$TMP_HTEX"
