@@ -31,3 +31,6 @@
 [submodule "vim/bundle/pandoc-after"]
 	path = vim/bundle/pandoc-after
 	url = https://github.com/vim-pandoc/vim-pandoc-after.git
+[submodule "vim/bundle/vim-scala"]
+	path = vim/bundle/vim-scala
+	url = git@github.com:derekwyatt/vim-scala.git
