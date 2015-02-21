@@ -16,5 +16,7 @@ main = xmonad gnomeConfig
         []
       insKeys :: XConfig l -> [((KeyMask, KeySym), X ())]
       insKeys conf@(XConfig {modMask = modm}) =
-        -- Insert nothing.
-        []
+        -- Insert command for locking screen. SHIFT + CTRL + l
+        [
+          ((shiftMask .|. controlMask, xK_l ), spawn "gnome-screensaver-command -l")
+        ]
