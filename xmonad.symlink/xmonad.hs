@@ -19,4 +19,6 @@ main = xmonad gnomeConfig
         -- Insert command for locking screen. SHIFT + CTRL + l
         [
           ((shiftMask .|. controlMask, xK_l ), spawn "gnome-screensaver-command -l")
+          , ((modm, xK_bracketright ), spawn "amixer -D pulse sset Master 5%+")
+          , ((modm, xK_bracketleft ), spawn "amixer -D pulse sset Master 5%-")
         ]
