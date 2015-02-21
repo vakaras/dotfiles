@@ -1,11 +1,13 @@
 import XMonad
 import XMonad.Config.Gnome
 import XMonad.Util.CustomKeys
+import XMonad.Hooks.SetWMName
 
 -- Change mod key from alt to super.
 main = xmonad gnomeConfig
     { modMask = mod4Mask
       , keys  = customKeys delKeys insKeys
+      , startupHook = setWMName "LG3D"
     }
     where
       delKeys :: XConfig l -> [(KeyMask, KeySym)]
