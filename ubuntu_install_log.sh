@@ -36,6 +36,7 @@ sudo apt-get install pandoc
 
 # Install monitoring programs.
 sudo apt-get install htop
+sudo apt-get install iotop
 
 # Install VirtualBox.
 sudo apt-get install virtualbox-4.3
