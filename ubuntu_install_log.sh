@@ -30,6 +30,9 @@ sudo apt-get install clang-3.5 clang-3.5-doc
 sudo apt-get install libboost-all-dev
 sudo apt-get install libgirara-gtk3-1
 sudo apt-get install zathura
+sudo apt-get install graphviz
+sudo apt-get install gnuplot
+sudo apt-get install pandoc
 
 # Install monitoring programs.
 sudo apt-get install htop
