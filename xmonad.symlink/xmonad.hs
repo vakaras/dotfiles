@@ -7,7 +7,15 @@ import XMonad.Hooks.SetWMName
 main = xmonad gnomeConfig
     { modMask = mod4Mask
       , keys  = customKeys delKeys insKeys
-      , startupHook = setWMName "LG3D"
+      , startupHook = do
+          setWMName "LG3D"
+          -- Set lithuanian keyboard layout.
+          -- Remap some keys.
+          spawn "setxkbmap lt us && xmodmap ~/.xmodmaprc"
+          -- Enable two finger horizontal scrolling.
+          spawn "synclient HorizTwoFingerScroll=1"
+          -- Set wallpaper.
+          spawn "feh --bg-center /home/downloads/Darbastalis/life-1366-768.png"
     }
     where
       delKeys :: XConfig l -> [(KeyMask, KeySym)]
