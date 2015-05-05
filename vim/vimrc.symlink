@@ -126,3 +126,9 @@ let g:syntastic_text_checkers=['language_check']
 
 let g:pandoc#syntax#codeblocks#embeds#langs = ["ruby", "python", "sql", "bash=sh", "tex", "cpp"]
 let g:pandoc#syntax#conceal#blacklist = ['codeblock_delim']
+
+" Solarized color scheme.
+set t_Co=256
+set background=dark
+colorscheme solarized
+call togglebg#map("<F5>")

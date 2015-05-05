@@ -34,3 +34,12 @@
 [submodule "vim/bundle/vim-scala"]
 	path = vim/bundle/vim-scala
 	url = git@github.com:derekwyatt/vim-scala.git
+[submodule "solarized/gnome-terminal"]
+	path = solarized/gnome-terminal
+	url = https://github.com/Anthony25/gnome-terminal-colors-solarized.git
+[submodule "vim/bundle/vim-colors-solarized"]
+	path = vim/bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "solarized/dircolors-solarized"]
+	path = solarized/dircolors-solarized
+	url = https://github.com/seebi/dircolors-solarized.git

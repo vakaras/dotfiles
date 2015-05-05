@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd $HOME/.dotfiles/solarized/gnome-terminal/
+./set_light.sh
