@@ -135,3 +135,10 @@ call togglebg#map("<F5>")
 
 " Set concealing (changing math symbols to unicode equivalents)
 set conceallevel=2
+
+" Enable persistent undo.
+set undofile
+set undodir=~/.vim/undodir
+
+" Configure Gundo.
+nnoremap <F6> :GundoToggle<CR>

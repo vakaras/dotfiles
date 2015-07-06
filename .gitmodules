@@ -43,3 +43,6 @@
 [submodule "solarized/dircolors-solarized"]
 	path = solarized/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
+[submodule "vim/bundle/gundo"]
+	path = vim/bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git
