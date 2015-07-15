@@ -16,6 +16,9 @@ main = xmonad gnomeConfig
           spawn "synclient HorizTwoFingerScroll=1"
           -- Set wallpaper.
           spawn "feh --bg-center /home/downloads/Darbastalis/life-1366-768.png"
+          -- Start health helpers
+          spawn "workrave"
+          spawn "redshift"
     }
     where
       delKeys :: XConfig l -> [(KeyMask, KeySym)]
