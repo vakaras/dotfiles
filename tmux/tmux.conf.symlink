@@ -34,9 +34,9 @@ bind C-c run "tmux show-buffer | xclip -i -selection clipboard"
 bind C-v run "tmux set-buffer -- \"$(xclip -o -selection clipboard)\"; tmux paste-buffer"
 
 # Spliting window.
-bind | run '~/.bin/tmux-split-in-cwd h' # horizontal split in cwd
-bind - run '~/.bin/tmux-split-in-cwd v' # vertical split in cwd
-bind m run '~/.bin/tmux-split-in-cwd' # new window in cwd
+bind | run 'tmux-split-in-cwd h' # horizontal split in cwd
+bind - run 'tmux-split-in-cwd v' # vertical split in cwd
+bind m run 'tmux-split-in-cwd' # new window in cwd
 
 # Copy mode
 setw -g mode-keys vi
