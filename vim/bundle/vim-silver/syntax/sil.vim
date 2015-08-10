@@ -19,6 +19,7 @@ syn keyword builtinFunctions acc old
 
 syn region codeBlock start="{" end="}" fold transparent
 syn region comment start="/\*" end="\*/" fold
+syn region comment start="//" end="\n" fold
 
 hi! def link mainKeywords SpecialKey
 hi! def link controlStatements SpecialKey
