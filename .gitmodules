@@ -51,4 +51,4 @@
 	url = https://github.com/vim-voom/VOoM.git
 [submodule "vim/bundle/vim-silver"]
 	path = vim/bundle/vim-silver
-	url = git@github.com:vakaras/vim-silver.git
+	url = https://github.com/vakaras/vim-silver.git
