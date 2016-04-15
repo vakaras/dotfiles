@@ -3,7 +3,7 @@ unbind C-b
 set -g prefix C-a
 
 # basic global settings:
-set-option -g default-shell /bin/zsh
+set-option -g default-shell /usr/bin/fish
 set-window-option -g utf8 on
 set-window-option -g mode-mouse on
 set-option -g mouse-select-pane on
