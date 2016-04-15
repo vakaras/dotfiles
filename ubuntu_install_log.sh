@@ -1,9 +1,8 @@
 # Install and configure shell.
-sudo apt-get install zsh zsh-doc
-chsh -s $(which zsh)
-
-# TODO: Try out fish
-# sudo apt-get install fish
+sudo add-apt-repository ppa:fish-shell/nightly-master
+sudo apt-get update
+sudo apt-get install fish
+chsh -s /usr/bin/fish
 
 # Install tmux.
 sudo apt-get install tmux xclip
