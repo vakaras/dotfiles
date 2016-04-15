@@ -52,4 +52,4 @@ sudo apt-get install lynx
 
 
 # Install health helpers.
-sudo apt-get install workrave
+sudo apt-get install workrave redshift
