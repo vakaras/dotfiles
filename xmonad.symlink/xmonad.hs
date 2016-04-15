@@ -18,7 +18,7 @@ main = xmonad gnomeConfig
           spawn "feh --bg-center /home/downloads/Darbastalis/life-1366-768.png"
           -- Start health helpers
           spawn "workrave"
-          spawn "redshift"
+          spawn "redshift -l 47.366667:8.55" -- Use Zürich coordinates.
     }
     where
       delKeys :: XConfig l -> [(KeyMask, KeySym)]
