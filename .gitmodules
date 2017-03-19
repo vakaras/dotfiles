@@ -3,19 +3,19 @@
 	url = https://github.com/tpope/vim-pathogen.git
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/bundle/closetag"]
 	path = vim/bundle/closetag
-	url = git://github.com/docunext/closetag.vim.git
+	url = https://github.com/docunext/closetag.vim.git
 [submodule "vim/bundle/nerdcommenter"]
 	path = vim/bundle/nerdcommenter
-	url = git://github.com/scrooloose/nerdcommenter.git
+	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
-	url = git://github.com/majutsushi/tagbar.git
+	url = https://github.com/majutsushi/tagbar.git
 [submodule "vim/bundle/latex"]
 	path = vim/bundle/latex
-	url = git://git.code.sf.net/p/vim-latex/vim-latex
+	url = https://git.code.sf.net/p/vim-latex/vim-latex.old
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -30,13 +30,13 @@
 	url = https://github.com/vim-pandoc/vim-pandoc-after.git
 [submodule "vim/bundle/vim-scala"]
 	path = vim/bundle/vim-scala
-	url = git@github.com:derekwyatt/vim-scala.git
+	url = https://github.com/derekwyatt/vim-scala.git
 [submodule "solarized/gnome-terminal"]
 	path = solarized/gnome-terminal
 	url = https://github.com/Anthony25/gnome-terminal-colors-solarized.git
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "solarized/dircolors-solarized"]
 	path = solarized/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
