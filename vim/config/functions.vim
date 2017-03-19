@@ -6,7 +6,7 @@ function! CurDir()
 endfunction
 
 " Rewraper.
-python << EOF
+python3 << EOF
 
 import textwrap
 import re
@@ -57,7 +57,7 @@ def rewrap(lines):
 EOF
 
 function! ReWrap() range
-python << EOF
+python3 << EOF
 
 import vim
 from vim import current
