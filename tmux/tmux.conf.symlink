@@ -7,6 +7,8 @@ set-option -g default-shell /usr/bin/fish
 
 # 256 collor mode
 set -g default-terminal "screen-256color"
+set -g status-bg green
+set -g status-fg black
 
 # Set larger history
 set -g history-limit 10000
