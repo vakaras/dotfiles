@@ -18,7 +18,14 @@ def rewrap(lines):
     blocks = []
     level = None
     block = []
+    comment = ''
     for line in lines:
+        if line.startswith('# ') or line.startswith('% '):
+            comment = line[:2]
+            line = line[2:]
+        if line.startswith('//! ') or line.startswith('/// '):
+            comment = line[:4]
+            line = line[4:]
         match = re.match(r'^((>+ )+)(.*)$', line)
         if match is None:
             match = re.match(r'^([ ]*([+\-*])?[ ]*)(.*)$', line)
@@ -45,13 +52,13 @@ def rewrap(lines):
         for i, line in enumerate(
                 textwrap.wrap(
                     text,
-                    width=(72 - len(level)),
+                    width=(72 - len(level) - len(comment)),
                     break_long_words=False,
                     break_on_hyphens=False)):
             if ('+' in level or '-' in level or '*' in level) and i > 0:
-                lines.append(clean(level) + line)
+                lines.append(comment + clean(level) + line)
             else:
-                lines.append(level + line)
+                lines.append(comment + level + line)
     return lines
 
 EOF
